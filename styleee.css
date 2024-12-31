@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+     font-family: "lato" sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color :#b32131;
+}
+
+h1{
+    color: #b32131;
+}
+h2{
+    color: maroon;
+}
+
+.card,.profil{
+    box-shadow: 10px 3px 8px 0px rgba(0,0,0,0.67);
+    background-color:#eedac9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.feat-img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content{
+    display: flex;
+    flex: 5;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside{
+    flex: 1;
+}
+
+main{
+    display: flex;
+    padding : 20px;
+    gap: 1.5rem;
+}
+
+.profil img {
+    width: 200px;
+}
+
+.profil{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.profil,.header{
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(134, 12, 1);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 3px 8px 0px rgba(0,0,0,0.67);
+}
+
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items:center;
+}
+
+nav li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header {
+    display: inline;
+}
+
+.atas{
+    font-size: 20px;
+    padding: 60px;
+    background-color: #eedac9;
+    text-align: center;
+    color: #b32131;
+}
+
+li  a{
+    color: #eedac9;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    font-weight: bold;
+    background-color: #8d6c50;
+    color: #eedac9;
+    padding: 20px;
+
+}
+aside.tab {
+    justify-items: center;
+}
+nav :hover {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+
+}
+
+@media screen and( max-width : 760px) {
+    nav ul {
+        justify-content: center;
+        column-gap: 0.5rem;
+
+    }
+    nav{
+        flex-direction: column;
+        display: flex;
+    }
+    main aside {
+        align-self: stretch;
+      }
+    
+}
+
+@media screen and( max-width : 320px) {
+    nav ul {
+        justify-content: center;
+        column-gap: 0.5rem;
+
+    }
+    nav{
+        flex-direction: column;
+    }
+    main aside {
+        align-self: stretch;
+      }
+    
+}
